@@ -274,26 +274,28 @@ footer {
     padding-left: 3vw;
     margin: 0;
     max-width: 100vw;
+    display: flex;
+
 
 }
 
 #footer-top {
-    width: 90vw;
+    width: 15vw;
     display: flex;
     justify-content: space-between;
     margin: 0;
-
-    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 #div-esquerda-rodape {
-    width: 30%;
-    height: 100%;
+    width: 90%;
+    height: auto;
+    margin-top: 4vh;
 }
 
 #div-esquerda-rodape img {
     width: 40%;
-    height: 40%;
+    height: 30%;
 }
 
 #div-esquerda-rodape p {
