@@ -55,7 +55,7 @@ ul a:hover{
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-    height:  auto;
+    height:  80vh;
 }
 #Topo article{
     margin-right: 6vw;
@@ -74,11 +74,11 @@ ul a:hover{
 }
 
 #conteudoTopo .txtAzulClaro{
-    color: #ffa500;
+    color: #8d2cc6;
 }
 
 #conteudoTopo span{
-    color: rgb(132, 14, 201);
+    color: #840ec9;
 }
 #conteudoTopo .txtLaranja{
     color: #ffa500;
@@ -137,7 +137,7 @@ input{
     font-size: 56px;
     line-height: 10px;
     font-family: poppinsmedium;
-    color: #65b4ff;
+    color: #840ec9;
     text-align: center;
     width:  auto;
     margin-top: 6vh;
@@ -249,7 +249,7 @@ input{
 
 #tituloSobreNos{
     text-align: center;
-    color: #fff;
+    color: #840ec9;
     text-decoration: none;
     border: none;
 }
@@ -274,6 +274,7 @@ footer {
     padding-left: 3vw;
     margin: 0;
     max-width: 100vw;
+
 }
 
 #footer-top {
@@ -331,11 +332,13 @@ footer {
 }
 
 #footer-bottom {
-    width: 90vw;
+    width: 66vw;
     display: flex;
-    justify-content: space-between;
-    margin: 0;
+    justify-content: space-evenly;
+    margin: auto;
     margin-top: 10px;
+    /* margin-right: 3vw; */
+    padding-right: 3vw;
 }
 
 .divisoes {
@@ -361,7 +364,7 @@ footer li{
     font-size: 20px;
     font-weight: normal;
     color: #fff;
-    margin-left: 8vw;
+    margin-left: 6vw;
     margin-bottom: -3px;
 }
 
