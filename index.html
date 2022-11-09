@@ -8,6 +8,9 @@
     <link href="/styles/fonts.css" rel="stylesheet">
     <link href="/styles/media.css" rel="stylesheet">
     <link rel="shortcut icon" href="./components/images/LOGOVoidTech.png" type="image/x-icon">
+    
+    <script src="jquery/jquery-3.6.0.min.js"></script>    
+    <script src="jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
 
     <title>Landing Page</title>
 </head>
@@ -22,7 +25,7 @@
             <a href="#Servicos"><li>Serviços</li></a>
             <a href="#Sobre"><li>Sobre</li></a>
             <a href="#Contato"><li>Contato</li></a>
-            <a href="#" id="inscreva-se-btn"><li>Receber Notificações</li></a>
+            <a href="#Notificacao" id="inscreva-se-btn"><li>Receber Notificações</li></a>
         </ul>
     </header>
 
@@ -34,11 +37,6 @@
                  Criada em 2022 por 6 estudantes de desenvolvimento de sistemas, a VoidTech tem como foco o nicho da automatização empresarial como principal produto da empresa.
                  <!-- , atualmente prestamos consultoria para diversas empresas e contamos com boas avaliações de clientes no mercado  -->
             </p>
-            <form>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="submit" value="Seguinte >">
-            </form>
         </aside>
 
         <article>
@@ -55,7 +53,7 @@
     <article id="servicos" class="cardsServico">   
             <div class="cardRoxo">
                 <div class="txtCardRoxo">
-                    <h2>consultoria</h2>
+                    <h2>Consultoria</h2>
                      <p><span class="quebraLinha">Nesse serviço, oferecemos para sua empresa a melhor consultoria, contando com os nossos engenheiros de software.</span><span class="linhaVertical"> Este pacote inclui: Diagramas, estudo de viabilidade, análise de projetos em ASTAH, fluxogramas e um projeto de engenharia de software, para garantir a melhor solução para sua empresa <br><br><a href="#">Saiba Mais</a>
                      </span>
                     </p>
@@ -79,6 +77,30 @@
     </div>
     <section id="sobreNos">
         <img src="./components/images/SobreNos.svg" alt="sobre nós">
+    </section>
+
+    <a name="Notificacao" id="fim"></a>
+    <section id="Notificacao">
+        <aside id="conteudoNotificacao">
+            <h2><span class="txtAzulClaro">Faça sua consultoria</span></h2>
+            <h2>com a V<span>o</span><span class="txtLaranja">i</span>dTech</h2>
+            <p>
+                 Criada em 2022 por 6 estudantes de desenvolvimento de sistemas, a VoidTech tem como foco o nicho da automatização empresarial como principal produto da empresa.
+                 <!-- , atualmente prestamos consultoria para diversas empresas e contamos com boas avaliações de clientes no mercado  -->
+            </p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Telefone" name="txtTelefone" id="" class="txtTelefone">
+                <textarea id="comentarios" name="comentarios" rows="5" cols="50">
+                </textarea> 
+               <input type="submit" value="Seguinte >">
+            </form>
+        </aside>
+
+        <article>
+            <img src="./components/images/imagemTopoLandin.svg" alt="mulher-roxa">
+        </article>
     </section>
 
 
@@ -137,5 +159,11 @@
             </div>
         </footer>
     
+
+        
+<script>
+    $('.txtTelefone').mask('(00)00000-0000');
+
+</script>
 </body>
 </html>

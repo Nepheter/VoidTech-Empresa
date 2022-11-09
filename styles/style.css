@@ -54,8 +54,9 @@ ul a:hover{
 #Topo {
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
-    height:  80vh;
+    align-items: center;
+    /* margin-top: 1px; */
+    height:  98vh;
 }
 #Topo article{
     margin-right: 6vw;
@@ -95,35 +96,14 @@ img{
     width: 580px;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-form [type="submit"]{
-    height: 50px;
-    width: 50%;
-    background-color: #840ec9;
-    color: white;
-    font-weight: bold;
-}
-form [type="submit"]:hover{
-    cursor: pointer;
-}
-
-input{
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
+#comentarios{
+    margin-top: 3vh;
+    background-color: #fff;
     border-radius: 20px;
-    border: none;
-    font-size: 15px;
 }
-
 
 #servicos{
-    height: 100vh;
+    height: 98vh;
     width: 80vw;
     margin: auto;
     margin-top: 10vh;
@@ -187,6 +167,7 @@ input{
     margin-top: 15vh;
     width: 90%;
 }
+
 
 .cardRoxo a{
     text-decoration: none;
@@ -263,6 +244,83 @@ input{
     width: 100%;
     height: 100%;
 }
+
+#Notificacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 1px; */
+    height:  98vh;
+}
+#Notificacao article{
+    margin-right: 6vw;
+}
+
+#conteudoNotificacao{
+    max-width: 90vw;
+    margin: auto;
+    height: auto;
+}
+
+#conteudoNotificacao h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+#conteudoNotificacao .txtAzulClaro{
+    color: #8d2cc6;
+}
+
+#conteudoNotificacao span{
+    color: #840ec9;
+}
+#conteudoNotificacao .txtLaranja{
+    color: #ffa500;
+}
+
+#conteudoNotificacao p{
+    line-height: 28px;
+    max-width: 44vw;
+    font-size: 22px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 580px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: #840ec9;
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+#comentarios{
+    margin-top: 3vh;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
 
 
 
