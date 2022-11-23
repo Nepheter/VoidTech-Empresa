@@ -495,14 +495,23 @@ footer li{
         height: auto;
     }
     header ul{
-        max-width: 68%;
+        /* max-width: 79%; */
+        width: 75%;
+        margin: auto;
+        font-size: 17px;
+        padding: 0;
+        margin-left: 10vw;    
+    }
+    header ul li{
+        margin: 3vh 8px;
     }
     #inscreva-se-btn{
-        margin-left: 5vw;    }
+        margin-bottom: 5vw;    
+    }
     #title{
         width: 40%;
         max-width: 40%;
-        height: 110px;
+        height: 90px;
     }
     #title img{
         width: 100%;
