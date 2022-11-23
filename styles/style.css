@@ -54,7 +54,8 @@ ul a:hover{
 #Topo {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
+    justify-content: space-around;
     /* margin-top: 1px; */
     height:  98vh;
 }
@@ -65,13 +66,15 @@ ul a:hover{
 #conteudoTopo{
     max-width: 90vw;
     margin: auto;
-    height: auto;
+    height: 70vh;
 }
 
 #conteudoTopo h2{
     font-size: 56px;
     line-height: 10px;
     font-family: poppinsmedium;
+    line-height: 35px;
+
 }
 
 #conteudoTopo .txtAzulClaro{
@@ -90,6 +93,8 @@ ul a:hover{
     max-width: 44vw;
     font-size: 22px;
     font-family: poppinslight;
+    line-height: 35px;
+
 }
 
 img{
@@ -130,6 +135,9 @@ img{
     margin-bottom: -5vh;
 }
 
+#servicosMobile, #sobreNosImgMobile{
+    display: none;
+}
 
 .cardRoxo{
     width: 17vw;
@@ -228,6 +236,10 @@ img{
     color: #840ec9;
 }
 
+
+
+
+
 #tituloSobreNos{
     text-align: center;
     color: #840ec9;
@@ -248,27 +260,23 @@ img{
 #Notificacao {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     /* margin-top: 1px; */
     height:  98vh;
+    width: auto;
 }
 #Notificacao article{
     margin-right: 6vw;
 }
 
 #conteudoNotificacao{
-    max-width: 90vw;
+    width: max-content;
     margin: auto;
     height: auto;
 }
 
-#conteudoNotificacao h2{
-    font-size: 56px;
-    line-height: 10px;
-    font-family: poppinsmedium;
-}
-
-#conteudoNotificacao .txtAzulClaro{
+#conteudoNotificacao .txtRoxo{
     color: #8d2cc6;
 }
 
@@ -321,6 +329,30 @@ input{
     border-radius: 20px;
 }
 
+#Notificacao{
+    height: 100vh;
+}   
+#conteudoNotificacao h2{
+    font-size: 40px;
+    margin: 0;
+}
+#conteudoNotificacao input , #comentarios{
+    background-color: #ccc;
+}
+
+#conteudoNotificacao input:focus , #comentarios:focus
+{
+    border: 2px solid #840ec9;
+    outline-offset: 0px;
+    outline: none;
+}
+#btnSeguinte{
+    background-color: #840ec9;
+    font-size: 20px;
+    width: 15vw;
+    margin-top: 5vh;
+    border-radius: 15px;
+}
 
 
 
@@ -445,4 +477,193 @@ footer li{
 #icons img{
     width: 100%;
     height: 100%;
+}
+
+
+/**/
+
+@media only screen and (max-width:480px) {
+
+    body{
+        height: auto;
+    }
+    body img{
+        display: block;
+        max-width: 98%;
+    }
+    header{
+        height: auto;
+    }
+    header ul{
+        max-width: 68%;
+    }
+    #inscreva-se-btn{
+        margin-left: 5vw;    }
+    #title{
+        width: 40%;
+        max-width: 40%;
+        height: 110px;
+    }
+    #title img{
+        width: 100%;
+        height: 100%;
+    }
+    #Topo{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: auto;
+    }
+    #conteudoTopo{
+        height: auto;
+        width: 98%;
+    }
+    #conteudoTopo h2{
+        width: 100%;
+        text-align: center;
+        line-height: 55px;
+        margin: 3vh 0;
+    }
+    #conteudoTopo p{
+        display: block;
+        width: 96%;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 4vh;
+    }
+    #Topo img{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5vh;
+    }
+    #servicos, #sobreNosImg, #Notificacao img{
+        display: none;        
+    }
+    #servicosMobile{
+        display: block;   
+        width: 98%;
+        height: auto;
+    }
+    #servicosMobile h2{
+        color: #ffa500;
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .txtCardRoxoMobile{
+        width: 94%;
+        margin: auto;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .txtCardRoxoMobile .txtLaranja{
+        display: bolck;
+        color: #ffb01d;
+    }
+    .txtCardRoxoMobile a{
+        color: #bb62ff;
+    }
+    .txtCardRoxoMobile .imgLaranja{
+        display: block;
+        width: 90%;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .txtCardLaranjaMobile{
+        width: 94%;
+        margin: auto;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .txtCardLaranjaMobile .txtRoxo{
+        display: bolck;
+        color: #840ec9;
+        margin: 0;
+        line-height: 30px;
+    }
+    .txtCardLaranjaMobile a{
+        color: #bb62ff;
+    }
+    .txtCardLaranjaMobile .imgRoxa{
+        display: block;
+        width: 90%;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    #SobreNos{
+        width: 98%;
+        height: auto;
+    }
+    #sobreNosImgMobile{
+        display: block;
+        margin: 0 auto;
+        width: 96%;
+        height: fit-content;
+        margin-top: -10vh;
+    }
+    #Notificacao{
+        height: auto;
+        max-width: 99%;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+    #conteudoNotificacao{
+        max-width: 98%;
+        width: 94%;
+        margin: auto;
+    }
+    #conteudoNotificacao h2{
+        text-align: center;
+    }
+    #conteudoNotificacao button{
+        width: 40vw;
+    }
+    #conteudoNotificacao p{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+    #conteudoNotificacao form, input{
+        display: block;
+        width: 90%;
+        max-width: 100%;
+        margin: auto;
+    }
+    #conteudoNotificacao input{
+        margin: 3vh 0;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer-top{
+        border: 0;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+    }
+    #footer-top #div-esquerda-rodape img{
+        width: 50%;
+        max-width: 40%;
+        height: 110px;
+    }
+    #footer-bottom{
+        width: 100%;
+        max-width: 100%;
+    }
+    .divisoes{
+        width: 45%;
+    }
+    #endereco li{
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px 0;
+    }
+
 }

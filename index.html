@@ -24,14 +24,13 @@
             <a href="#"><li>Início</li></a>
             <a href="#Servicos"><li>Serviços</li></a>
             <a href="#Sobre"><li>Sobre</li></a>
-            <a href="#Contato"><li>Contato</li></a>
             <a href="#Notificacao" id="inscreva-se-btn"><li>Receber Notificações</li></a>
         </ul>
     </header>
 
     <section id="Topo">
         <aside id="conteudoTopo">
-            <h2><span class="txtAzulClaro">Faça sua consultoria</span></h2>
+            <h2><span class="txtRoxo">Faça sua consultoria</span></h2>
             <h2>com a V<span>o</span><span class="txtLaranja">i</span>dTech</h2>
             <p>
                  Criada em 2022 por 6 estudantes de desenvolvimento de sistemas, a VoidTech tem como foco o nicho da automatização empresarial como principal produto da empresa.
@@ -67,6 +66,22 @@
                     </span></p>
                 </div>
                 <img src="./components/images/cardLaranja.svg" alt="">
+            </div>                      
+    </article>
+    <article id="servicosMobile">
+        <div class="txtCardRoxoMobile">
+                <h2>Consultoria</h2>
+                 <p>Nesse serviço, oferecemos para sua empresa a<span class="txtLaranja"> melhor consultoria</span>, contando com os nossos engenheiros de software. Este pacote inclui: Diagramas, estudo de viabilidade, análise de projetos em ASTAH, fluxogramas e um projeto de engenharia de software, para garantir a melhor solução para sua empresa <br><br><a href="#">Saiba Mais</a>
+                </p>
+            </div>
+            <img class="imgLaranja" src="./components/images/codandoRoxoMobile.svg" alt="o"> 
+
+                <div class="txtCardLaranjaMobile">
+                    <h2>Produtos</h2>
+                    <p>Nesse serviço, <span class="txtRoxo">oferecemos para sua empresa</span> suporte presencial ou remoto 24 horas;atualizações e otimizações constantes; desenvolvimento multiplataforma (IOS, Android e Desktop)<br><br><a href="#">Saiba Mais</a>
+                    </span></p>
+                
+                <img class="imgRoxa" src="./components/images/duvidaCardMobile.svg" alt="">
             </div>
     </article>
 
@@ -76,16 +91,17 @@
         <h1>Sobre Nós</h1>
     </div>
     <section id="sobreNos">
-        <img src="./components/images/SobreNos.svg" alt="sobre nós">
+        <img id="sobreNosImg" src="./components/images/SobreNos.svg" alt="sobre nós">
+        <img id="sobreNosImgMobile" src="./components/images/SobreNosMobile.svg" alt="sobre nós">
     </section>
 
     <a name="Notificacao" id="fim"></a>
     <section id="Notificacao">
         <aside id="conteudoNotificacao">
-            <h2><span class="txtAzulClaro">Faça sua consultoria</span></h2>
-            <h2>com a V<span>o</span><span class="txtLaranja">i</span>dTech</h2>
+            <h2 class="tituloNotificacao"><span class="txtRoxo">Fique por dentro das informações da</span></h2>
+            <h2 class="tituloNotificacao">V<span>o</span><span class="txtLaranja">i</span>dTech</h2>
             <p>
-                 Criada em 2022 por 6 estudantes de desenvolvimento de sistemas, a VoidTech tem como foco o nicho da automatização empresarial como principal produto da empresa.
+                 Para receber informações sobre: serviços, atualizações, informções do mundo da tecnologia, entre em contato conosco
                  <!-- , atualmente prestamos consultoria para diversas empresas e contamos com boas avaliações de clientes no mercado  -->
             </p>
             <form>
@@ -94,7 +110,7 @@
                 <input type="text" placeholder="Telefone" name="txtTelefone" id="" class="txtTelefone">
                 <textarea id="comentarios" name="comentarios" rows="5" cols="50">
                 </textarea> 
-               <input type="submit" value="Seguinte >">
+               <button type="submit" id="btnSeguinte" value="Seguinte >">Seguinte ></button>
             </form>
         </aside>
 
@@ -105,7 +121,6 @@
 
 
 
-    <a name="Contato" id="fim"></a>
         <footer>    
             <div id="footer-top">
                 <div id="div-esquerda-rodape">
@@ -141,7 +156,7 @@
                     </a>
                     <ul id="endereco">
                         <li><a href="#">Etec de Itaquera - Itaquera</a></li>
-                        <li><a href="#"> SP - 08295-005</a></li>
+                        <li> SP - 08295-005</li>
                     </ul>
                 </div>
                 <div class="divisoes">
@@ -163,6 +178,7 @@
         
 <script>
     $('.txtTelefone').mask('(00)00000-0000');
+
 
 </script>
 </body>
