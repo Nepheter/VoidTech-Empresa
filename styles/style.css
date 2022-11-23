@@ -629,7 +629,7 @@ footer li{
         margin: auto;
         margin-top: 5vh;
     }
-    #conteudoNotificacao form, input{
+    #conteudoNotificacao form, input, #comentarios{
         display: block;
         width: 90%;
         max-width: 100%;
