@@ -104,13 +104,6 @@ box-shadow: 0px 18px 47px -11px #444;
 }
 
 
-
-
-
-.fundo-slider-humanas {
-    background: linear-gradient(0deg, rgba(1, 0, 15, 0) 5%, #B11600 5%, #B11600 76%, rgba(255, 255, 255, 1) 76%);
-}
-
 .img-categoria {
     width: 50%;
     display: flex;
@@ -177,19 +170,19 @@ box-shadow: 0px 18px 47px -11px #444;
 }
 
 #scrool-mat::-webkit-scrollbar-track {
-    background-color: #0000001b;
+    background-color: #292929;
     border-radius: 100vw;
     margin-block: .5em;
 }
 
 #scrool-mat::-webkit-scrollbar-thumb {
-    background-color: #012E40ad;
+    background-color: #6419a5;
     border-radius: 100vw;
 }
 
 #scrool-mat::-webkit-scrollbar-thumb:hover {
     transition: .4s all ease-in-out;
-    background-color: #012E40;
+    background-color: #6419a5;
 }
 
 #linha-poster-largo {
