@@ -6,26 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/styles/style.css" rel="stylesheet">
     <link href="/styles/fonts.css" rel="stylesheet">
-    <link href="/styles/media.css" rel="stylesheet">
+    <link href="/styles/media.css" rel="stylesheet">  
+    <link href="/styles/slider.css" rel="stylesheet">  
     <link rel="shortcut icon" href="./components/images/LOGOVoidTech.png" type="image/x-icon">
     
     <script src="jquery/jquery-3.6.0.min.js"></script>    
     <script src="jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
 
-    <title>Landing Page</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+
+    <title>VoidTech</title>
 </head>
 <body>
-    <header>
-        <div id="title">
-            <img src="./components/images/LOGOVoidTech.png">
-        </div>
 
-        <ul>
-            <a href="#"><li>Início</li></a>
-            <a href="#Servicos"><li>Serviços</li></a>
-            <a href="#Sobre"><li>Sobre</li></a>
-            <a href="#Notificacao" id="inscreva-se-btn"><li>Receber Notificações</li></a>
-        </ul>
+    <header>
+
+
+        <nav id="nav-menu">
+            <div id="title" class="menu-logo">
+                <a href="#">
+                    <img src="./components/images/LOGOVoidTech.png">
+                </a>
+            </div>
+            <div id="menu-links">
+                <ul>
+                    <a href="#"><li>Início</li></a>
+                    <a href="#Servicos"><li>Serviços</li></a>
+                    <a href="#Sobre"><li>Sobre Nós</li></a>
+                    <a href="#Notificacao" id="inscreva-se-btn"><li>Receber Notificações</li></a>
+                </ul>
+            </div>
+            
+            
+                <div class="menu-responsivo">                   
+                            <img onclick="menuShow()" class="icon" src="./components/images/menu.png"
+                                alt="menu dinamico em forma de hamburguer">                        
+                    <div class="mobile-menu  menu-hamburguer">
+                        <ul>
+                            <li class="nav-item"> <a href="#categoriaz" class="nav-link">Início</a></li>
+                            <li class="nav-item"> <a href="#Servicos" class="nav-link">Serviços</a></li>
+                            <li class="nav-item"> <a href="#Sobre" class="nav-link">Sobre Nós</a></li>
+                            <li class="nav-item"> <a href="#Notificacao" class="nav-link">Contatos</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+                
+        </nav>
     </header>
 
     <section id="Topo">
@@ -66,7 +94,11 @@
                     </span></p>
                 </div>
                 <img src="./components/images/cardLaranja.svg" alt="">
-            </div>                      
+            </div>    
+
+           
+
+
     </article>
     <article id="servicosMobile">
         <div class="txtCardRoxoMobile">
@@ -84,6 +116,84 @@
                 <img class="imgRoxa" src="./components/images/duvidaCardMobile.svg" alt="">
             </div>
     </article>
+
+    
+
+    <section id="sliders">
+        <div id="container-slide">
+            <h2>Alguns aplicativos feito pelo nosso time</h2>
+            <div class="slide-comentario">
+                <div class="slides-comentario">
+                    <div id="voltar" class="btn">
+                        <img src="./components/images/SetaEsquerda.png"
+                            alt="seta para esquerda, para avançar ou voltar o slide de comentarios relevantes">
+                    </div>
+                    <div id="proximo" class="btn">
+                        <img src="./components/images/setaDireita.svg"
+                            alt="seta para esquerda, para avançar ou voltar o slide de comentarios relevantes">
+                    </div>
+
+                    <div id="atual" class="image">
+                        <img src="./components/images/appCombustivel.png"
+                            alt="app que calcula o melhor combustivel">
+                    </div>
+                    <div class="image">
+                        <img src="./components/images/appCarros.png"
+                            alt="app da lista dos carros mais roubados">
+                    </div>
+                    <div class="image">
+                        <img src="./components/images/appDesconto.png"
+                            alt="App de calculo de desconto">
+                    </div>
+                    <div class="image">
+                        <img src="./components/images/appTimes.png"
+                            alt="Simples app dos quatro times grandes de sp">
+                    </div>
+                    <div class="image">
+                        <img src="./components/images/appVoidTechServicos.png"
+                            alt="Criador do Projeto, Desenvolvedor FullStack - Anderson">
+                    </div>
+                    <div class="image">
+                        <img src="./components/images/appVoidTechProdutos.png"
+                            alt="Criador do Projeto, Desenvolvedor FullStack -Felipe">
+                    </div>
+                    <div class="image">
+                        <img src="./components/images/appVoidTechSobre.png"
+                            alt="Criador do Projeto, Desenvolvedor FullStack -Felipe">
+                    </div>
+                    <div class="image">
+                        <img src="./components/images/appVoidTechContato.png"
+                            alt="Criador do Projeto, Desenvolvedor FullStack -Felipe">
+                    </div>
+                    
+                </div>
+                <div class="balls">
+                    <div class="imgAtual" id="0"></div>
+                </div>
+            </div>
+    </section>
+
+    <section id="sliderMobile">
+        <h2>Alguns aplicativos feito pelo nosso time</h2>
+        <div class="linha-posters fundo-slider-exatas" id="scrool-mat">
+            <img src="./components/images/appCarros.png" 
+                alt="Artigo relacionado Ciências Exatas - Guia ajuda a elaborar projetos de Laboratórios Abertos de Prototipagem">                
+           <img src="./components/images/appCarros.png"
+                alt="Artigo relacionado Ciências Exatas -Novos dados de Gaia: terremotos estelares, DNA estelar e muito mais!">
+            <img src="./components/images/appDesconto.png"
+                alt="Artigo relacionado Ciências Exatas - Pesquisadores investigam como converter etanol em eletricidade e hidrogênio por meio de reforma eletroquímica">
+           <img src="./components/images/appTimes.png"
+                alt="Artigo relacionado Ciências Exatas - Pesquisadores criam “máquina do tempo” simulada para estudar evolução de galáxias ancestrais">
+           <img src="./components/images/appVoidTechServicos.png"
+                alt="Artigo relacionado Ciências Exatas - Cientistas investigam tecnologias de combustão que geram gás carbônico quase puro para estoque ou reúso">
+            <img src="./components/images/appVoidTechProdutos.png"
+                alt="Artigo relacionado Ciências Exatas - Telescópio em construção no sertão nordestino, Bingo lança pedra científica fundamental">
+            <img src="./components/images/appVoidTechSobre.png"
+                alt="Artigo relacionado Ciências Exatas - Como a Lua se formou? Cientistas mapeiam presença de hidrogênio na superfície lunar">
+           <img src="./components/images/appVoidTechContato.png"
+                alt="O Telescópio Gigante Magalhães (GMT - Giant Magellan Telescope)">      
+        </div> 
+    </section>
 
     <a name="Sobre"></a>
 
@@ -179,7 +289,9 @@
 <script>
     $('.txtTelefone').mask('(00)00000-0000');
 
+</script>
 
+<script src="script.js">
 </script>
 </body>
 </html>
