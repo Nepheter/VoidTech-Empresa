@@ -2,8 +2,9 @@ body{
     background-color: #222222;
     color: white;
     font-family: poppinsregular;
-max-width: 100vw;
+    max-width: 100vw;
     margin: 0 auto;
+    height: auto;
     /* padding: 15px; */
 }
 
@@ -110,7 +111,13 @@ header{
     height:  98vh;
 }
 #Topo article{
-    margin-right: 6vw;
+    margin-right: 6vw; 
+    width: 530px;
+    height: 530px;
+}
+#Topo article img{
+    width: 90%;
+    height: 90%;
 }
 
 #conteudoTopo{
@@ -175,7 +182,7 @@ img{
     color: #840ec9;
     text-align: center;
     width:  auto;
-    margin-top: 6vh;
+    margin-top: 3vh;
     margin-bottom: 6vh;
 }
 
@@ -192,8 +199,7 @@ img{
 .cardRoxo{
     width: 17vw;
     height: 40vh;
-    border-radius: 15px;
-       
+    border-radius: 15px;       
 }
 
 .txtCardRoxo{
@@ -213,7 +219,7 @@ img{
 .cardRoxo p{
     width: 100%;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .quebraLinha{
     width: 25vw;
@@ -222,7 +228,7 @@ img{
 }
 .linhaVertical{
     position: absolute;
-    margin-top: 15vh;
+    margin-top: 20vh;
     width: 90%;
 }
 
@@ -263,7 +269,7 @@ img{
     
     width: 100%;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .quebraLinhaLaranja{
@@ -273,7 +279,7 @@ img{
 }
 .linhaVerticalLaranja{
     position: absolute;
-    margin-top: 15vh;
+    margin-top: 20vh;
     width: 98%;
 }
 
@@ -313,8 +319,11 @@ img{
     justify-content: space-around;
     align-items: center;
     /* margin-top: 1px; */
-    height:  98vh;
+    height: fit-content;
     width: auto;
+    padding-left: 3vw;
+    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 #Notificacao article{
     margin-right: 6vw;
@@ -323,7 +332,7 @@ img{
 #conteudoNotificacao{
     width: max-content;
     margin: auto;
-    height: auto;
+    height: fit-content;
 }
 
 #conteudoNotificacao .txtRoxo{
@@ -379,15 +388,14 @@ input{
     border-radius: 20px;
 }
 
-#Notificacao{
-    height: 100vh;
-}   
 #conteudoNotificacao h2{
     font-size: 40px;
     margin: 0;
 }
 #conteudoNotificacao input , #comentarios{
     background-color: #ccc;
+    box-shadow: rgb(10, 10, 10) 5px 5px 5px;
+
 }
 
 #conteudoNotificacao input:focus , #comentarios:focus
@@ -401,7 +409,9 @@ input{
     font-size: 20px;
     width: 15vw;
     margin-top: 5vh;
+    border: #840ec9 solid 1px;
     border-radius: 15px;
+    box-shadow: rgb(10, 10, 10) 5px 5px 5px;
 }
 
 
@@ -415,8 +425,6 @@ footer {
     margin: 0;
     max-width: 100vw;
     display: flex;
-
-
 }
 
 #footer-top {
@@ -495,7 +503,7 @@ footer ul{
 }
 
 footer li{
-    margin: 7px auto;
+    /* margin: 7px auto; */
     text-align: left;
 
 }
@@ -518,15 +526,15 @@ footer li{
 
 
 #icons {
-    width: 55%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 18px;
     margin-left: 4vw;
 }
 #icons img{
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: auto;
 }
 
 #sliderMobile{
@@ -544,23 +552,7 @@ footer li{
         display: block;
         max-width: 98%;
     }
-    /* header{
-        height: auto;
-    }
-    header ul{
-        /* max-width: 79%; 
-        width: 75%;
-        margin: auto;
-        font-size: 17px;
-        padding: 0;
-        margin-left: 10vw;    
-    }
-    header ul li{
-        margin: 3vh 8px;
-    }
-    #inscreva-se-btn{
-        margin-bottom: 5vw;    
-    } */
+
 
     header {
         width: 94%;
@@ -668,11 +660,8 @@ footer li{
         margin: auto;
         margin-bottom: 4vh;
     }
-    #Topo img{
-        display: block;
-        width: 90%;
-        margin: auto;
-        margin-bottom: 5vh;
+    #Topo article{
+        display: none;
     }
     #servicos, #sobreNosImg, #Notificacao img{
         display: none;        
@@ -746,12 +735,14 @@ footer li{
         height: fit-content;
         margin-top: -10vh;
     }
+    
     #Notificacao{
         height: auto;
         max-width: 99%;
-        width: 98%;
+        width: 95%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 30px;
     }
     #conteudoNotificacao{
         max-width: 98%;
@@ -784,6 +775,7 @@ footer li{
     footer{
         display: flex;
         flex-direction: column;
+        width: 100vw;
     }
     #footer-top{
         border: 0;
@@ -798,6 +790,7 @@ footer li{
     #footer-bottom{
         width: 100%;
         max-width: 100%;
+        padding: 0;
     }
     .divisoes{
         width: 45%;
