@@ -1,6 +1,6 @@
 <?php
   //Variáveis
-  $nome = $_POST['nome'];
+  $nome = $_POST['nome-email'];
   $email = $_POST['email-enviar'];
   $telefone = $_POST['txtTelefone'];
   $mensagem = $_POST['comentarios'];
@@ -12,7 +12,8 @@
     <html>
       <p><b>Nome: </b>$nome</p>
       <p><b>E-mail: </b>$email</p>
-      <p><b>Mensagem: </b>$mensagem</p>
+      <p><b>Mensagem: </b>$comentarios</p>
+      <p><b>Telefone: </b>$txtTelefone</p>
       <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
     </html>
   ";
