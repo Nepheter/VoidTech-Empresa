@@ -204,9 +204,9 @@
                  Para receber informações sobre: serviços, atualizações, informções do mundo da tecnologia, entre em contato conosco
                  <!-- , atualmente prestamos consultoria para diversas empresas e contamos com boas avaliações de clientes no mercado  -->
             </p>
-            <form>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
+            <form action="./php/enviar-email.php" method="post">
+                <input type="text" placeholder="Nome" name="nome-email">
+                <input type="email" placeholder="E-mail" nome="email-enviar">
                 <input type="text" placeholder="Telefone" name="txtTelefone" id="" class="txtTelefone">
                 <textarea id="comentarios" name="comentarios" rows="5" cols="50">
                 </textarea> 
